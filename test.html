@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cube</title>
+    <style>
+        .container {
+            width: 150px;
+            height: 150px;
+            margin: auto;
+        }
+
+        .cube {
+            width: 100%;
+            height: 100%;
+            perspective: 550px;
+            perspective-origin: 150% 150%;
+            transform-style: preserve-3d;
+        }
+
+        .face {
+            display: block;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+
+        #front {
+            background: rgba(255, 225, 225, 0.5);
+            transform: translateZ(50px);
+            }
+
+        #back {
+            background: rgba(0, 255, 225, 0.5);
+            transform: rotateY(180deg) translateZ(50px);
+            visibility: hidden;
+        }
+
+        #right {
+            background: rgba(225, 0, 225, 0.5);
+            transform: rotateY(90deg) translateZ(50px);
+        }
+
+        #left {
+            background: rgba(225, 0, 225, 0.5);
+            transform: rotateY(-90deg) translateZ(50px);
+            visibility: hidden;
+        }
+
+        #top {
+            background: rgba(225, 225, 0, 0.5);
+            transform: rotateX(90deg) translateZ(50px);
+        }
+
+        #bottom {
+            background: rgba(225, 225, 0, 0.5);
+            transform: rotateX(-90deg) translateZ(50px);
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="cube">
+        <div class="face" id="front"></div>
+        <div class="face" id="back"></div>
+        <div class="face" id="right"></div>
+        <div class="face" id="left"></div>
+        <div class="face" id="top"></div>
+        <div class="face" id="bottom"></div>
+    </div>
+</div>
+</body>
+</html>

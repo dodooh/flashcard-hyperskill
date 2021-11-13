@@ -1,0 +1,76 @@
+body{
+    background-color: darksalmon;
+    background-image: url("pngwing.com.jpeg");
+}
+.flex-conteiner {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    width: 400px;
+    font-family: 'Bebas Neue', cursive;
+    margin: auto;
+    flex-flow: row wrap;
+
+}
+.flexbox-item{
+    width: 100px;
+    margin: 10px;
+    border: 3px solid beige;
+    background-color: beige;
+    justify-content: center;
+    align-content: center;
+    min-height: 100px;
+    text-align: center;
+}
+.flexbox-item1{
+    min-height: 100px;
+    text-align: center;
+}
+.flexbox-item2{
+    min-height: 100px;
+}
+.flexbox-item3{
+    min-height: 100px;
+}
+.flexbox-item4{
+    min-height: 100px;
+}
+.flexbox-item5{
+    min-height: 100px;
+}
+.flexbox-item6{
+    min-height: 100px;
+}
+.flexbox-item7{
+    min-height: 100px;
+}
+.flexbox-item8{
+    min-height: 100px;
+}
+.flexbox-item9{
+    min-height: 100px;
+}
+.front, .back {
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+.flexbox-item {
+    transition: all 2s ease;
+    transform-style: preserve-3d;
+}
+
+.flexbox-item:hover {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+}
+.back {
+    transform: rotateY(180deg);
+}
